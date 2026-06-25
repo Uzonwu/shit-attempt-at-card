@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="brand">✦ certified freak</span>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="card.html">Card</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="playlist.html" class="active">Playlist</a></li>
+    </ul>
+  </nav>
+
+  <div class="playlist-wrap">
+    <h1>a playlist, just for you bbg 
+      <img src="playlist/here.jpg" alt="" class="title-icon">
+    </h1>
+
+    <div class="now-playing">
+      <img id="current-cover" src="playlist/song1.gif" alt="Now playing cover">
+      <div class="info">
+        <div class="label">Now Playing</div>
+        <div id="current-title" class="title">Plastic Love</div>
+        <div id="current-artist" class="artist">Mariya Takeuchi</div>
+        <div class="controls">
+          <button id="prev" class="ctrl-btn">⏮</button>
+          <button id="play" class="play-btn">▶</button>
+          <button id="next" class="ctrl-btn">⏭</button>
+        </div>
+        <div class="progress-bar">
+          <div id="progress" class="fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <video id="audio" style="display:none;"></video>
+
+    <div class="song-list">
+      <div class="song-row active" data-index="0">
+        <span class="num">1</span>
+        <img src="playlist/song1.gif" alt="Song 1" />
+        <div class="meta">
+          <div class="song-title active-title">Plastic Love</div>
+          <div class="song-artist">Mariya Takeuchi</div>
+        </div>
+        <span class="desc">
+          Summer:<br>
+          "The fucking hottest but undoubtedly brightest season of the year. 
+          Touch Grass...bugs be damned"
+        </span>
+      </div>
+
+      <div class="song-row" data-index="1">
+        <span class="num">2</span>
+        <img src="playlist/song2.gif" alt="Song 2" />
+        <div class="meta">
+          <div class="song-title">Telephone Number</div>
+          <div class="song-artist">Junko Ohashi</div>
+        </div>
+        <span class="desc">
+          Autumn:<br>
+          "A cooling transition from warmth to cold. idk it coincides with 
+          halloween so it's my 2nd favourite."
+        </span>
+      </div>
+
+      <div class="song-row" data-index="2">
+        <span class="num">3</span>
+        <img src="playlist/song4.gif" alt="Song 3" />
+        <div class="meta">
+          <div class="song-title">Stay With Me</div>
+          <div class="song-artist">Miki Matsubara</div>
+        </div>
+        <span class="desc">
+          Winter:<br>
+          "The coldest and darkest season of the year. Had me at dark but the 
+          cold is a plus, peak season ngl."
+        </span>
+      </div>
+
+      <div class="song-row" data-index="3">
+        <span class="num">4</span>
+        <img src="playlist/song3.gif" alt="Song 4" />
+        <div class="meta">
+          <div class="song-title">Bay City</div>
+          <div class="song-artist">Junko Yagam</div>
+        </div>
+        <span class="desc">
+          Spring:<br>
+          "A transitional period of awakening and renewal. Boo, brings up freshly thawed bugs and 
+          mandatory deep cleaning."
+        </span>
+      </div>
+
+      <div class="song-row" data-index="4">
+        <span class="num">5</span>
+        <img src="playlist/song5.jpg" alt="Song 5" />
+        <div class="meta">
+          <div class="song-title">You're Beautiful?</div>
+          <div class="song-artist">who tf even knows</div>
+        </div>
+        <span class="desc">
+          "...fml...just know this hurt me to put this in ¬_¬"
+        </span>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

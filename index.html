@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--page1, intro-->
+  <div id="screen-intro" class="screen">
+    <h1>Happy Birthday!</h1>
+    <p>
+      T'is the day Thou was born and behold here,<br>
+      thee's shittest attempth at a day of birth congratulatory gift.<br><br>
+      Do you dare for a peek?
+    </p>
+    <p class="italic">
+      ... I won't talk in the accent the whole time, I promise
+    </p>
+    <div class="btn-row">
+      <button id="btn-nay" class="btn-outline" onclick="show('screen-nay'); startGifCycle();">Nay, peasant!</button>
+      <button class="btn-primary" onclick="show('screen-who')">Fine, I guess...</button>
+    </div>
+  </div>
+
+  <!--page2, nay-->
+  <div id="screen-nay" class="screen">
+    <div id="gif-container">
+      <img id="sad-gif" src="" alt="sad reaction" />
+    </div>
+    <div class="nay-content">
+      <p>sure I can't make you change your mind? :(</p>
+      <button class="btn-primary" onclick="show('screen-who')">
+        Jeez, okay
+      </button>
+    </div>
+  </div>
+
+  <!--page3, who art thou-->
+  <div id="screen-who" class="screen">
+    <h1>Awesome!!!</h1>
+    <p>But first...<br>
+      am I actually conversing with the 
+      <strong class="gradient-text">Certified Freak?</strong> 👀
+    </p>
+    <p class="italic">
+      sorry, I have to do this cuz I have it set to public to be able to host 
+      and can't risk someone stumbling on it :)
+    </p>
+    <div class="btn-row">
+      <button class="btn-outline" onclick="show('screen-wrong')">No...</button>
+      <button class="btn-primary" onclick="show('screen-sure')">Yup, is me</button>
+    </div>
+  </div>
+
+  <!--page4, wrong person-->
+  <div id="screen-wrong" class="screen">
+    <div class="wrong-image">
+      <img src="sideeye/sideeye1.jpg" alt="sideeye reaction" />
+    </div>
+    <p>
+      WTF why are you even here then???<br>
+      This isn't for you!!
+    </p>
+    <button class="btn-outline" onclick="show('screen-intro')">
+      Take me back
+    </button>
+  </div>
+
+  <!--page5, sure?-->
+  <div id="screen-sure" class="screen">
+    <h1>Really?</h1>
+    <p>Like you...<em>really</em>...really are?<br>
+    🤨 . . . 🤔 . . . 😕 . . . 😒</p>
+    <div class="btn-row">
+      <button class="btn-outline" onclick="show('screen-wrong')">Actually no...</button>
+      <button class="btn-primary" onclick="show('screen-quiz')">YES ALREADY!!</button>
+    </div>
+  </div>
+
+  <!--page6, quiz-->
+  <div id="screen-quiz" class="screen">
+    <div id="quiz-pictures"></div>
+    <div id="quiz-content">
+      <div id="quiz-main">
+        <h1 style="font-size:clamp(1.4rem,4vw,2rem);">
+          Ah ah ah not too fast 😏 A QUIZ!
+        </h1>
+        <img class="meme-image" src="meme/meme2.png" alt="meme">
+        <p id="quiz-question">
+          How does this go? Other should be in parentheses ;)
+        </p>
+        <input id="meme-answer" type="text" placeholder="your answer...">
+        <button class="btn-primary" onclick="checkMeme()">
+          Submit
+        </button>
+      </div>
+
+      <div id="hint-prompt" style="display:none;">
+        <h1>God this is pitiful 😑</h1>
+        <p>
+          Do you need a hint?
+        </p>
+        <div class="btn-row">
+          <button class="btn-primary" onclick="showHint()">Yes</button>
+          <button class="btn-outline" onclick="continueQuiz()">No</button>
+        </div>
+      </div>
+
+      <div id="hint-content" style="display:none;">
+        <p class="italic">
+          Hey...who are you?! (*you should know -_-*)
+        </p>
+        <button class="btn-primary" onclick="continueQuiz()">
+          Return to quiz
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--page7, imposter-->
+  <div id="screen-imposter" class="screen">
+    <div class="wrong-image">
+      <img src="sideeye/sideeye2.jpg">
+    </div>
+    <p>
+      Who invited this person???!!!<br>
+      Get the fuck outta here, imposter...
+    </p>
+    <button class="btn-outline" onclick="show('screen-quiz')">
+      Lemme try again!
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

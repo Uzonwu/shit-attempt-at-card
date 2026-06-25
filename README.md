@@ -1,2 +1,2 @@
-# shit-attempt-at-card
-A poorly made Birthday Card for an otherwise great person...? Huh? Buttered up yet?
+# A Thing
+A poorly made Birthday Card for an otherwise GREAT person...? Huh? Buttered up yet?
