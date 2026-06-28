@@ -181,8 +181,8 @@ function resetQuiz() {
 const songs = [
   { title:"Plastic Love",    artist:"Mariya Takeuchi", audio:"playlist/song1.mp4", image:"playlist/song1.gif" },
   { title:"Telephone Number",artist:"Junko Ohashi",    audio:"playlist/song2.mp4", image:"playlist/song2.gif" },
-  { title:"Stay With Me",    artist:"Miki Matsubara",  audio:"playlist/song4.mp4", image:"playlist/song4.gif" },
-  { title:"Bay City",        artist:"Junko Yagami",    audio:"playlist/song3.mp4", image:"playlist/song3.gif" },
+  { title:"Stay With Me",    artist:"Miki Matsubara",  audio:"playlist/song3.mp4", image:"playlist/song3.gif" },
+  { title:"Bay City",        artist:"Junko Yagami",    audio:"playlist/song4.mp4", image:"playlist/song4.gif" },
   { title:"You're Beautiful?",artist:"who tf even knows",audio:"playlist/song5.mp4",image:"playlist/song5.2.gif"}
 ];
 
